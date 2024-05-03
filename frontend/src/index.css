@@ -25,9 +25,9 @@
   border-radius: 5px;
 }
 
-::-webkit-scrollbar-thumb : hover {
+/* ::-webkit-scrollbar-thumb : hover {
   background: #555;
-}
+} */
 
 @layer base {
   .active_link {
