@@ -1,10 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
-import Home from "./pages/Home";
-import Category from "./pages/Category";
-import Product from "./pages/Product";
-import Cart from "./pages/Cart";
-import Login from "./pages/Login";
+import { Login, Cart, Product, Category, Home } from "./pages";
 
 function App() {
   return (
