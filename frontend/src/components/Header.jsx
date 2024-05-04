@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import logo from "../assets/logo.svg";
 import Navbar from "./Navbar";
 import { useState } from "react";
+import { MdClose, MdMenu } from "react-icons/md";
 
 const Header = () => {
   const [menuOpened, setMenuOpened] = useState(false);
@@ -29,7 +30,23 @@ const Header = () => {
           }`}
         />
         {/* buttons */}
-        <div>buttons</div>
+        <div className="flexBetween sm:gap-x-6 bold-16">
+          {!menuOpened ? (
+            <MdMenu
+              className="md:hidden cursor-pointer hover:text-secondary mr-2 p-1 ring-1 ring-slate-900/30 h-8 w-8 rounded-full hover:ring-secondary"
+              onClick={() => {
+                setMenuOpened(!menuOpened);
+              }}
+            />
+          ) : (
+            <MdClose
+              className="md:hidden cursor-pointer hover:text-secondary mr-2 p-1 ring-1 ring-slate-900/30 h-8 w-8 rounded-full hover:ring-secondary"
+              onClick={() => {
+                setMenuOpened(!menuOpened);
+              }}
+            />
+          )}
+        </div>
       </div>
     </header>
   );
