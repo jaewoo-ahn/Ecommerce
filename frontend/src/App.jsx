@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
 import { Login, Cart, Product, Category, Home } from "./pages";
+import { Footer, Header } from "./components";
 
 function App() {
   return (
@@ -9,15 +9,16 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/" element={<Category />} />
-          <Route path="/" element={<Category />} />
-          <Route path="/" element={<Category />} />
-          <Route path="/" element={<Product />}>
+          <Route path="/mens" element={<Category />} />
+          <Route path="/womens" element={<Category />} />
+          <Route path="/kids" element={<Category />} />
+          <Route path="/product" element={<Product />}>
             <Route path=":productId" element={<Product />} />
           </Route>
-          <Route path="/" element={<Cart />} />
-          <Route path="/" element={<Login />} />
+          <Route path="/cart-page" element={<Cart />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </main>
   );
