@@ -1,11 +1,9 @@
 import { NavLink } from "react-router-dom";
 import { MdHomeFilled, MdCategory, MdShop2, MdContacts } from "react-icons/md";
 
-const Navbar = () => {
+const Navbar = ({ containerStyles }) => {
   return (
-    <nav
-    // className={`${containerStyles}`}
-    >
+    <nav className={`${containerStyles}`}>
       <NavLink to="/">
         <div className="flexCenter gap-x-1">
           <MdHomeFilled />
