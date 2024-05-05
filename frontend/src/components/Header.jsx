@@ -53,12 +53,12 @@ const Header = () => {
                 0
               </span>
             </NavLink>
-            <NavLink
+            {/* <NavLink
               to={"logout"}
-              className={"btn_secondary_rounded flexCenter gap-x-2 medium-16"}
+              className={"btn_secondary_rounded flexCenter gap-x-2 medium-16 "}
             >
               Logout
-            </NavLink>
+            </NavLink> */}
             <NavLink
               to={"login"}
               className={"btn_secondary_rounded flexCenter gap-x-2 medium-16"}
