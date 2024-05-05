@@ -4,7 +4,7 @@ import { MdHomeFilled, MdCategory, MdShop2, MdContacts } from "react-icons/md";
 const Navbar = ({ containerStyles }) => {
   return (
     <nav className={`${containerStyles}`}>
-      <NavLink to="/">
+      <NavLink to="/" className={{(isActive) => ()}}>
         <div className="flexCenter gap-x-1">
           <MdHomeFilled />
           Home
